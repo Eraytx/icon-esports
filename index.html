@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iCON ESPORTS | THKÜ E-Spor Takımı & Seçme Portalı</title>
+    
+    <!-- Google Fonts & FontAwesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css?v=esports">
+</head>
+<body>
+
+    <!-- Navigasyon Çubuğu -->
+    <nav>
+        <div class="container nav-inner">
+            <a href="#" class="logo">
+                <span class="icon-i">i</span>CON<span class="badge-esports">ESPORTS</span><span class="cursor">_</span>
+            </a>
+            <div class="nav-links">
+                <a href="#arenas" class="nav-link">BRANŞLAR</a>
+                <a href="#apply" class="nav-link">BAŞVURU YAP</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Bölümü -->
+    <header>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fa-solid fa-gamepad"></i> THKÜ iCON E-SPOR TOPLULUĞU • 2026 - 2027 SEÇMELERİ
+                </div>
+                <h1 class="hero-title">OYUNU<br><span class="hero-gradient-text">DOMİNE ET.</span></h1>
+                <p class="hero-subtitle">
+                    Refleks, strateji ve takım ruhu. Türk Hava Kurumu Üniversitesi iCON Esports bünyesinde Valorant, LoL, CS2 ve EA FC sahnelerinde mücadele edecek yetenekli oyuncuları ve yayın/medya ekibini arıyoruz. Sen de yerini al!
+                </p>
+                <a href="#apply" class="btn-primary">
+                    SEÇMELERE KATIL <i class="fa-solid fa-crosshairs"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Branşlar & Arenalar Bölümü -->
+    <section class="section" id="arenas">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">BRANŞLAR & <span>DİSİPLİNLER</span></h2>
+                <p style="color: var(--text-muted); font-size: 1.2rem;">Mücadele ettiğimiz espor ligleri ve aradığımız kadrolar.</p>
+            </div>
+
+            <div class="features-grid">
+                <!-- Taktiksel FPS -->
+                <div class="feature-card">
+                    <i class="fa-solid fa-crosshairs feature-icon"></i>
+                    <h3>TAKTIKSEL FPS (VALORANT & CS2)</h3>
+                    <p>Mekanik aim becerisi, harita kontrolü, clutch disiplini, profesyonel scrim antrenmanları ve üniversiteler arası şampiyonluk hedefi.</p>
+                </div>
+                <!-- MOBA & Strateji -->
+                <div class="feature-card">
+                    <i class="fa-solid fa-dragon feature-icon"></i>
+                    <h3>MOBA & STRATEJİ (LEAGUE OF LEGENDS)</h3>
+                    <p>Derin şampiyon havuzu, macro harita okuma, dalga yönetimi, takım savaşı sinerjisi ve Red Bull / Ünilig turnuva sahneleri.</p>
+                </div>
+                <!-- Medya & Prodüksiyon -->
+                <div class="feature-card">
+                    <i class="fa-solid fa-headset feature-icon"></i>
+                    <h3>MEDYA, YAYIN & KOÇLUK</h3>
+                    <p>Twitch/Kick canlı yayın yönetimi (OBS), turnuva spikerliği (cast), video edit (Reels/TikTok), maç afişi grafik tasarımı ve takım içi koçluk/analistlik.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Başvuru Formu Bölümü -->
+    <section class="section apply-section" id="apply">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">TAKIM <span>BAŞVURUSU</span></h2>
+                <p style="color: var(--text-muted); font-size: 1.2rem;">iCON Esports ailesine katılmak ve formayı giymek için bilgilerini eksiksiz doldur.</p>
+            </div>
+
+            <div class="form-container">
+                <form id="esportsApplyForm">
+                    
+                    <div class="form-group">
+                        <label for="fullname">AD SOYAD <span class="req">*</span></label>
+                        <input type="text" id="fullname" name="fullname" class="form-control" required placeholder="Kimlikteki adınız...">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">E-POSTA <span class="req">*</span></label>
+                            <input type="email" id="email" name="email" class="form-control" required placeholder="aktif.adres@mail.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">TELEFON <span class="req">*</span></label>
+                            <input type="tel" id="phone" name="phone" class="form-control" required placeholder="05XX XXX XX XX">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="university">BÖLÜM & SINIF <span class="req">*</span></label>
+                        <input type="text" id="university" name="university" class="form-control" required placeholder="Örn: Bilgisayar Mühendisliği - 2. Sınıf">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="discord_tag">DİSCORD KULLANICI ADI & OYUN İÇİ NİCK <span class="req">*</span></label>
+                        <input type="text" id="discord_tag" name="discord_tag" class="form-control" required placeholder="Örn: discorduser#0000 | Nick: Shadow#TR1">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="department">HEDEFLENEN BRANŞ / DEPARTMAN <span class="req">*</span></label>
+                        <select id="department" name="department" class="form-control" required>
+                            <option value="" disabled selected>Lütfen başvurmak istediğiniz alanı seçin...</option>
+                            <optgroup label="Oyun Branşları (Takım Oyuncusu)">
+                                <option value="Valorant — Takım Oyuncusu">Valorant — Takım Oyuncusu</option>
+                                <option value="League of Legends — Takım Oyuncusu">League of Legends — Takım Oyuncusu</option>
+                                <option value="Counter-Strike 2 — Takım Oyuncusu">Counter-Strike 2 — Takım Oyuncusu</option>
+                                <option value="EA Sports FC (FIFA) — Takım Oyuncusu">EA Sports FC (FIFA) — Takım Oyuncusu</option>
+                                <option value="Diğer Oyunlar (TFT, Rocket League vb.)">Diğer Oyunlar (TFT, Rocket League vb.)</option>
+                            </optgroup>
+                            <optgroup label="Teknik, Yönetim & Medya Ekibi">
+                                <option value="Koçluk & Takım Analisti (Coach / Analyst)">Koçluk & Takım Analisti (Coach / Analyst)</option>
+                                <option value="Yayın, Prodüksiyon & Spikerlik (OBS / Caster)">Yayın, Prodüksiyon & Spikerlik (OBS / Caster)</option>
+                                <option value="Sosyal Medya, Video Edit & Grafik Tasarım">Sosyal Medya, Video Edit & Grafik Tasarım</option>
+                                <option value="Turnuva & Topluluk Organizasyonu">Turnuva & Topluluk Organizasyonu</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <!-- ==================================================== -->
+                    <!-- 1. DİNAMİK ALAN: VALORANT ÖZEL                      -->
+                    <!-- ==================================================== -->
+                    <div class="dynamic-department-box" id="valDynamicBox">
+                        <div class="dynamic-box-header">
+                            <div class="dynamic-box-title">
+                                <i class="fa-solid fa-crosshairs"></i> Valorant Yetkinlikleri
+                            </div>
+                            <span class="dynamic-box-badge">VALORANT ÖZEL</span>
+                        </div>
+                        <p class="dynamic-box-desc">Valorant dereceniz ve oyun içi tercihleriniz.</p>
+
+                        <!-- Rank Seçimi -->
+                        <div class="form-group">
+                            <label>MEVCUT / PEAK RANK <span class="req">*</span></label>
+                            <div class="level-group">
+                                <label class="level-option">
+                                    <input type="radio" name="val_rank" value="Radyant">
+                                    <span>Radyant</span>
+                                </label>
+                                <label class="level-option">
+                                    <input type="radio" name="val_rank" value="Ölümsüz">
+                                    <span>Ölümsüz</span>
+                                </label>
+                                <label class="level-option">
+                                    <input type="radio" name="val_rank" value="Yücelik">
+                                    <span>Yücelik</span>
+                                </label>
+                                <label class="level-option">
+                                    <input type="radio" name="val_rank" value="Elmas">
+                                    <span>Elmas</span>
+                                </label>
+                                <label class="level-option">
+                                    <input type="radio" name="val_rank" value="Platin">
+                                    <span>Platin</span>
+                                </label>
+                                <label class="level-option">
+                                    <input type="radio" name="val_rank" value="Altın ve Altı">
+                                    <span>Altın / Altı</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Rol Seçimi -->
+                        <div class="form-group">
+                            <label>ANA ROL & AJANLARINIZ <span class="req">*</span></label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="val_roles" value="Duelist (Jett, Reyna, Raze vb.)">
+                                    <span class="custom-checkbox"></span>
+                                    <span class="option-text">Duelist</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="val_roles" value="Initiator (Sova, Fade, Breach vb.)">
+                                    <span class="custom-checkbox"></span>
+                                    <span class="option-text">Initiator</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="val_roles" value="Controller (Omen, Viper, Brim vb.)">
+                                    <span class="custom-checkbox"></span>
+                                    <span class="option-text">Controller</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="val_roles" value="Sentinel (Killjoy, Cypher vb.)">
+                                    <span class="custom-checkbox"></span>
+                                    <span class="option-text">Sentinel</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Tracker / Riot ID -->
+                        <div class="form-group">
+                            <label for="valProfile">TRACKER.GG PROFİL LİNKİ VEYA RIOT ID#TAG <span class="req">*</span></label>
+                            <input type="text" id="valProfile" name="val_profile" class="form-control" placeholder="Örn: https://tracker.gg/valorant/profile/riot/Player%23TR1 veya Player#TR1">
+                        </div>
+                    </div>
+
+                    <!-- ==================================================== -->
+                    <!-- 2. DİNAMİK ALAN: LEAGUE OF LEGENDS ÖZEL             -->
+                    <!-- ==================================================== -->
+                    <div class="dynamic-department-box" id="lolDynamicBox">
+                        <div class="dynamic-box-header">
+                            <div class="dynamic-box-title">
+                                <i class="fa-solid fa-dragon"></i> League of Legends Yetkinlikleri
+                            </div>
+                            <span class="dynamic-box-badge">LOL ÖZEL</span>
+                        </div>
+                        <p class="dynamic-box-desc">LoL dereceniz ve oynadığınız koridorlar.</p>
+
+                        <!-- Rank Seçimi -->
+                        <div class="form-group">
+                            <label>MEVCUT / PEAK RANK <span class="req">*</span></label>
+                            <div class="level-group">
+                                <label class="level-option">
+                                    <input type="radio" name="lol_rank" value="Challenger">
+                                    <span>Challenger</span>
+                                </label>
+                                <label class="level-option">
+                                    <input type="radio" name="lol_rank" value="Grandmaster">
+                                    <span>GM</span>
+                                </label>
+                                <label class="level-option">
+                                    <input type="radio" name="lol_rank" value="Master">
+                                    <span>Master</span>
+                                </label>
+                                <label class="level-option">
+                                    <input type="radio" name="lol_rank" value="Diamond">
+                                    <span>Diamond</span>
+                                </label>
+                                <label class="level-option">
+                                    <input type="radio" name="lol_rank" value="Emerald">
+                                    <span>Emerald</span>
+                                </label>
+                                <label class="level-option">
+                                    <input type="radio" name="lol_rank" value="Platinum ve Altı">
+                                    <span>Plat / Altı</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Koridor Seçimi -->
+                        <div class="form-group">
+                            <label>ANA KORİDORLARINIZ <span class="req">*</span></label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="lol_roles" value="Top Lane">
+                                    <span class="custom-checkbox"></span>
+                                    <span class="option-text">Top Lane</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="lol_roles" value="Jungle">
+                                    <span class="custom-checkbox"></span>
+                                    <span class="option-text">Jungle</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="lol_roles" value="Mid Lane">
+                                    <span class="custom-checkbox"></span>
+                                    <span class="option-text">Mid Lane</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="lol_roles" value="ADC / Bot">
+                                    <span class="custom-checkbox"></span>
+                                    <span class="option-text">ADC / Bot</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="lol_roles" value="Support">
+                                    <span class="custom-checkbox"></span>
+                                    <span class="option-text">Support</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- OP.GG Linki -->
+                        <div class="form-group">
+                            <label for="lolProfile">OP.GG PROFİL LİNKİ VEYA SİHİRDAR ADI <span class="req">*</span></label>
+                            <input type="text" id="lolProfile" name="lol_profile" class="form-control" placeholder="Örn: https://www.op.gg/summoners/tr/SummonerName-TR1">
+                        </div>
+                    </div>
+
+                    <!-- ==================================================== -->
+                    <!-- 3. DİNAMİK ALAN: CS2 ÖZEL                           -->
+                    <!-- ==================================================== -->
+                    <div class="dynamic-department-box" id="cs2DynamicBox">
+                        <div class="dynamic-box-header">
+                            <div class="dynamic-box-title">
+                                <i class="fa-solid fa-gun"></i> Counter-Strike 2 Yetkinlikleri
+                            </div>
+                            <span class="dynamic-box-badge">CS2 ÖZEL</span>
+                        </div>
+                        <p class="dynamic-box-desc">Premier puanınız ve Faceit seviyeniz.</p>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="cs2Rank">PREMIER PUANI / FACEIT SEVİYESİ <span class="req">*</span></label>
+                                <input type="text" id="cs2Rank" name="cs2_rank" class="form-control" placeholder="Örn: Premier 18.000 / Faceit Lv 8">
+                            </div>
+                            <div class="form-group">
+                                <label for="cs2Role">TERCİH EDİLEN ROL <span class="req">*</span></label>
+                                <input type="text" id="cs2Role" name="cs2_role" class="form-control" placeholder="Örn: Entry Fragger, AWP veya IGL">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cs2Profile">STEAM VEYA FACEIT PROFİL LİNKİ <span class="req">*</span></label>
+                            <input type="text" id="cs2Profile" name="cs2_profile" class="form-control" placeholder="Örn: https://faceit.com/en/players/username">
+                        </div>
+                    </div>
+
+                    <!-- ==================================================== -->
+                    <!-- 4. DİNAMİK ALAN: MEDYA, YÖNETİM & YAYIN             -->
+                    <!-- ==================================================== -->
+                    <div class="dynamic-department-box" id="mediaDynamicBox">
+                        <div class="dynamic-box-header">
+                            <div class="dynamic-box-title">
+                                <i class="fa-solid fa-photo-film"></i> Medya & Yönetim Yetkinlikleri
+                            </div>
+                            <span class="dynamic-box-badge">MEDYA ÖZEL</span>
+                        </div>
+                        <p class="dynamic-box-desc">Kullandığınız programlar ve espor prodüksiyon tecrübeniz.</p>
+
+                        <div class="form-group">
+                            <label>HAKİM OLDUĞUNUZ PROGRAMLAR / ARAÇLAR</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="media_skills" value="Premiere Pro">
+                                    <span class="custom-checkbox"></span>
+                                    <span class="option-text">Premiere Pro</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="media_skills" value="After Effects">
+                                    <span class="custom-checkbox"></span>
+                                    <span class="option-text">After Effects</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="media_skills" value="Photoshop">
+                                    <span class="custom-checkbox"></span>
+                                    <span class="option-text">Photoshop</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="media_skills" value="OBS Studio">
+                                    <span class="custom-checkbox"></span>
+                                    <span class="option-text">OBS Studio</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="media_skills" value="Spikerlik / Cast">
+                                    <span class="custom-checkbox"></span>
+                                    <span class="option-text">Spikerlik / Cast</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="media_skills" value="Turnuva Yönetimi">
+                                    <span class="custom-checkbox"></span>
+                                    <span class="option-text">Turnuva Yönetimi</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mediaPortfolio">PORTFOLYO / ÇALIŞMA ÖRNEKLERİ LİNKİ</label>
+                            <input type="text" id="mediaPortfolio" name="media_portfolio" class="form-control" placeholder="Örn: Behance, Drive veya Instagram linki">
+                        </div>
+                    </div>
+
+                    <!-- Genel Tecrübe -->
+                    <div class="form-group">
+                        <label for="experience">GEÇMİŞ TURNUVA, SCRIM VEYA TAKIM TECRÜBENİZ <span class="req">*</span></label>
+                        <textarea id="experience" name="experience" class="form-control" required placeholder="Daha önce herhangi bir turnuva, scrim, üniversite ligi (Ünilig) veya amatör takımda oynadınız mı? Varsa başarılarınızı kısaca özetleyiniz..."></textarea>
+                    </div>
+
+                    <!-- KVKK Onay Kutusu -->
+                    <div class="form-group kvkk-group">
+                        <label class="checkbox-label kvkk-label">
+                            <input type="checkbox" id="kvkkConsent" name="kvkk_consent" required>
+                            <span class="custom-checkbox"></span>
+                            <span class="option-text">
+                                <a href="javascript:void(0)" id="openKvkkModal" class="kvkk-link">KVKK Aydınlatma Metni</a>'ni okudum, anladım ve kişisel verilerimin iCON Esports seçmeleri ve takım iletişim süreçleri kapsamında işlenmesini kabul ediyorum. <span class="req">*</span>
+                            </span>
+                        </label>
+                    </div>
+
+                    <!-- Submit Butonu -->
+                    <button type="submit" class="btn-primary btn-submit" id="submitBtn">
+                        BAŞVURUYU TAMAMLA <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="logo">
+                <span class="icon-i">i</span>CON<span class="badge-esports">ESPORTS</span><span class="cursor">_</span>
+            </div>
+            <p class="footer-desc">Türk Hava Kurumu Üniversitesi resmi öğrenci espor topluluğu.</p>
+            <p class="footer-credits">&copy; 2026 - 2027 iCON Esports | Tüm Hakları Saklıdır.</p>
+        </div>
+    </footer>
+
+    <!-- Başvuru Başarılı Modalı -->
+    <div class="modal-overlay" id="successModal">
+        <div class="modal-content">
+            <div class="modal-icon-wrap">
+                <i class="fa-solid fa-trophy"></i>
+            </div>
+            <h3 class="modal-title">BAŞVURU ALINDI!</h3>
+            <p class="modal-desc">
+                iCON Esports seçme başvurunuz başarıyla sisteme kaydedildi. Oyun geçmişiniz ve yetkinlikleriniz incelendikten sonra deneme maçları (tryout) ve mülakat için Discord veya telefon üzerinden iletişime geçilecektir.
+            </p>
+            <button type="button" class="btn-primary modal-btn" id="closeModalBtn">
+                TAMAM <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- KVKK Aydınlatma Metni Modalı -->
+    <div class="modal-overlay" id="kvkkModal">
+        <div class="modal-content kvkk-modal-content">
+            <div class="kvkk-header">
+                <h3 class="kvkk-title"><i class="fa-solid fa-shield-halved"></i> KVKK Aydınlatma Metni</h3>
+                <button type="button" class="kvkk-close-btn" id="closeKvkkBtn">&times;</button>
+            </div>
+            <div class="kvkk-body">
+                <p><strong>6698 Sayılı Kişisel Verilerin Korunması Kanunu (KVKK) Kapsamında Bilgilendirme</strong></p>
+                
+                <h4>1. Veri Sorumlusu</h4>
+                <p>iCON Esports Topluluğu olarak, bu başvuru formu aracılığıyla sağladığınız kişisel verilerinizin gizliliğine ve güvenliğine azami hassasiyet göstermekteyiz.</p>
+
+                <h4>2. Kişisel Verilerin İşlenme Amacı</h4>
+                <p>Toplanan ad, soyad, e-posta, telefon, Discord kullanıcı adı, oyun profili ve oyun geçmişi verileriniz; yalnızca iCON Esports seçmelerinin yürütülmesi, lig ve turnuva kadrolarının oluşturulması, tryout organizasyonu ve aday iletişimi amacıyla sınırlı olarak işlenmektedir.</p>
+
+                <h4>3. Verilerin Güvenliği</h4>
+                <p>Paylaştığınız kişisel veriler; hiçbir surette üçüncü şahıslara, sponsorlara veya ilgisiz taraflara satılmaz, kiralanmaz ya da aktarılmaz. Veriler yalnızca espor koordinatörleri ve koçluk ekibi tarafından incelenir.</p>
+
+                <h4>4. Haklarınız</h4>
+                <p>KVKK'nın 11. maddesi uyarınca dilediğiniz zaman iCON Esports yönetimine başvurarak kişisel verilerinizin silinmesini, güncellenmesini veya düzeltilmesini talep edebilirsiniz.</p>
+            </div>
+            <button type="button" class="btn-primary modal-btn" id="acceptKvkkModalBtn">
+                OKUDUM, KABUL EDİYORUM
+            </button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
